@@ -106,6 +106,17 @@ public final class WhatIsNewInDirectMethodHandleDesc$Kind
   public final boolean isInterface = $$$().isInterface;
 
   /**
+   * Example call to new method {@link Kind#values()}.
+   * @since 12
+   * @see Kind#values()
+   */
+  public static Kind[] values()
+  {
+    Kind[] result = Kind.values();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link Kind#valueOf(String)}.
    * @since 12
    * @see Kind#valueOf(String)
@@ -135,17 +146,6 @@ public final class WhatIsNewInDirectMethodHandleDesc$Kind
   public static Kind valueOf(int refKind, boolean isInterface)
   {
     Kind result = Kind.valueOf(refKind, isInterface);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Kind#values()}.
-   * @since 12
-   * @see Kind#values()
-   */
-  public static Kind[] values()
-  {
-    Kind[] result = Kind.values();
     return result;
   }
 

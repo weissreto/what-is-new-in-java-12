@@ -14,19 +14,6 @@ package whatisnewin.java.lang;
 public final class WhatIsNewInClass<T>
 {
   /**
-   * Example call to new method {@link Class#arrayType()}.
-   * @since 12
-   * @see Class#arrayType()
-   */
-  public Class<?> arrayType()
-  {
-    Class<T> testee = $$$();
-
-    Class<?> result = testee.arrayType();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Class#descriptorString()}.
    * @since 12
    * @see Class#descriptorString()
@@ -49,6 +36,19 @@ public final class WhatIsNewInClass<T>
     Class<T> testee = $$$();
 
     Class<?> result = testee.componentType();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Class#arrayType()}.
+   * @since 12
+   * @see Class#arrayType()
+   */
+  public Class<?> arrayType()
+  {
+    Class<T> testee = $$$();
+
+    Class<?> result = testee.arrayType();
     return result;
   }
 

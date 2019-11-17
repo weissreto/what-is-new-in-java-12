@@ -2,8 +2,8 @@ package whatisnewin.java.text;
 
 import java.text.CompactNumberFormat;
 import java.text.DecimalFormatSymbols;
-import java.text.AttributedCharacterIterator;
 import java.text.FieldPosition;
+import java.text.AttributedCharacterIterator;
 import java.text.ParsePosition;
 import java.math.RoundingMode;
 
@@ -27,93 +27,6 @@ public final class WhatIsNewInCompactNumberFormat
   public WhatIsNewInCompactNumberFormat(String decimalPattern, DecimalFormatSymbols symbols, String[] compactPatterns)
   {
     CompactNumberFormat testee = new CompactNumberFormat(decimalPattern, symbols, compactPatterns);
-  }
-
-  /**
-   * Example call to new method {@link CompactNumberFormat#setGroupingUsed(boolean)}.
-   * @since 12
-   * @see CompactNumberFormat#setGroupingUsed(boolean)
-   */
-  public void setGroupingUsed(boolean newValue)
-  {
-    CompactNumberFormat testee = $$$();
-
-    testee.setGroupingUsed(newValue);
-  }
-
-  /**
-   * Example call to new method {@link CompactNumberFormat#getGroupingSize()}.
-   * @since 12
-   * @see CompactNumberFormat#getGroupingSize()
-   */
-  public int getGroupingSize()
-  {
-    CompactNumberFormat testee = $$$();
-
-    int result = testee.getGroupingSize();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link CompactNumberFormat#setParseBigDecimal(boolean)}.
-   * @since 12
-   * @see CompactNumberFormat#setParseBigDecimal(boolean)
-   */
-  public void setParseBigDecimal(boolean newValue)
-  {
-    CompactNumberFormat testee = $$$();
-
-    testee.setParseBigDecimal(newValue);
-  }
-
-  /**
-   * Example call to new method {@link CompactNumberFormat#formatToCharacterIterator(Object)}.
-   * @since 12
-   * @see CompactNumberFormat#formatToCharacterIterator(Object)
-   */
-  public AttributedCharacterIterator formatToCharacterIterator(Object obj)
-  {
-    CompactNumberFormat testee = $$$();
-
-    AttributedCharacterIterator result = testee.formatToCharacterIterator(obj);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link CompactNumberFormat#setGroupingSize(int)}.
-   * @since 12
-   * @see CompactNumberFormat#setGroupingSize(int)
-   */
-  public void setGroupingSize(int newValue)
-  {
-    CompactNumberFormat testee = $$$();
-
-    testee.setGroupingSize(newValue);
-  }
-
-  /**
-   * Example call to new method {@link CompactNumberFormat#isGroupingUsed()}.
-   * @since 12
-   * @see CompactNumberFormat#isGroupingUsed()
-   */
-  public boolean isGroupingUsed()
-  {
-    CompactNumberFormat testee = $$$();
-
-    boolean result = testee.isGroupingUsed();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link CompactNumberFormat#setMaximumIntegerDigits(int)}.
-   * @since 12
-   * @see CompactNumberFormat#setMaximumIntegerDigits(int)
-   */
-  public void setMaximumIntegerDigits(int newValue)
-  {
-    CompactNumberFormat testee = $$$();
-
-    testee.setMaximumIntegerDigits(newValue);
   }
 
   /**
@@ -156,6 +69,19 @@ public final class WhatIsNewInCompactNumberFormat
   }
 
   /**
+   * Example call to new method {@link CompactNumberFormat#formatToCharacterIterator(Object)}.
+   * @since 12
+   * @see CompactNumberFormat#formatToCharacterIterator(Object)
+   */
+  public AttributedCharacterIterator formatToCharacterIterator(Object obj)
+  {
+    CompactNumberFormat testee = $$$();
+
+    AttributedCharacterIterator result = testee.formatToCharacterIterator(obj);
+    return result;
+  }
+
+  /**
    * Example call to new method {@link CompactNumberFormat#parse(String, ParsePosition)}.
    * @since 12
    * @see CompactNumberFormat#parse(String, ParsePosition)
@@ -169,6 +95,30 @@ public final class WhatIsNewInCompactNumberFormat
   }
 
   /**
+   * Example call to new method {@link CompactNumberFormat#setMaximumIntegerDigits(int)}.
+   * @since 12
+   * @see CompactNumberFormat#setMaximumIntegerDigits(int)
+   */
+  public void setMaximumIntegerDigits(int newValue)
+  {
+    CompactNumberFormat testee = $$$();
+
+    testee.setMaximumIntegerDigits(newValue);
+  }
+
+  /**
+   * Example call to new method {@link CompactNumberFormat#setMinimumIntegerDigits(int)}.
+   * @since 12
+   * @see CompactNumberFormat#setMinimumIntegerDigits(int)
+   */
+  public void setMinimumIntegerDigits(int newValue)
+  {
+    CompactNumberFormat testee = $$$();
+
+    testee.setMinimumIntegerDigits(newValue);
+  }
+
+  /**
    * Example call to new method {@link CompactNumberFormat#setMinimumFractionDigits(int)}.
    * @since 12
    * @see CompactNumberFormat#setMinimumFractionDigits(int)
@@ -178,6 +128,18 @@ public final class WhatIsNewInCompactNumberFormat
     CompactNumberFormat testee = $$$();
 
     testee.setMinimumFractionDigits(newValue);
+  }
+
+  /**
+   * Example call to new method {@link CompactNumberFormat#setMaximumFractionDigits(int)}.
+   * @since 12
+   * @see CompactNumberFormat#setMaximumFractionDigits(int)
+   */
+  public void setMaximumFractionDigits(int newValue)
+  {
+    CompactNumberFormat testee = $$$();
+
+    testee.setMaximumFractionDigits(newValue);
   }
 
   /**
@@ -194,52 +156,65 @@ public final class WhatIsNewInCompactNumberFormat
   }
 
   /**
-   * Example call to new method {@link CompactNumberFormat#isParseBigDecimal()}.
+   * Example call to new method {@link CompactNumberFormat#setRoundingMode(RoundingMode)}.
    * @since 12
-   * @see CompactNumberFormat#isParseBigDecimal()
+   * @see CompactNumberFormat#setRoundingMode(RoundingMode)
    */
-  public boolean isParseBigDecimal()
+  public void setRoundingMode(RoundingMode roundingMode)
   {
     CompactNumberFormat testee = $$$();
 
-    boolean result = testee.isParseBigDecimal();
+    testee.setRoundingMode(roundingMode);
+  }
+
+  /**
+   * Example call to new method {@link CompactNumberFormat#getGroupingSize()}.
+   * @since 12
+   * @see CompactNumberFormat#getGroupingSize()
+   */
+  public int getGroupingSize()
+  {
+    CompactNumberFormat testee = $$$();
+
+    int result = testee.getGroupingSize();
     return result;
   }
 
   /**
-   * Example call to new method {@link CompactNumberFormat#setMinimumIntegerDigits(int)}.
+   * Example call to new method {@link CompactNumberFormat#setGroupingSize(int)}.
    * @since 12
-   * @see CompactNumberFormat#setMinimumIntegerDigits(int)
+   * @see CompactNumberFormat#setGroupingSize(int)
    */
-  public void setMinimumIntegerDigits(int newValue)
+  public void setGroupingSize(int newValue)
   {
     CompactNumberFormat testee = $$$();
 
-    testee.setMinimumIntegerDigits(newValue);
+    testee.setGroupingSize(newValue);
   }
 
   /**
-   * Example call to new method {@link CompactNumberFormat#setParseIntegerOnly(boolean)}.
+   * Example call to new method {@link CompactNumberFormat#isGroupingUsed()}.
    * @since 12
-   * @see CompactNumberFormat#setParseIntegerOnly(boolean)
+   * @see CompactNumberFormat#isGroupingUsed()
    */
-  public void setParseIntegerOnly(boolean value)
+  public boolean isGroupingUsed()
   {
     CompactNumberFormat testee = $$$();
 
-    testee.setParseIntegerOnly(value);
+    boolean result = testee.isGroupingUsed();
+    return result;
   }
 
   /**
-   * Example call to new method {@link CompactNumberFormat#setMaximumFractionDigits(int)}.
+   * Example call to new method {@link CompactNumberFormat#setGroupingUsed(boolean)}.
    * @since 12
-   * @see CompactNumberFormat#setMaximumFractionDigits(int)
+   * @see CompactNumberFormat#setGroupingUsed(boolean)
    */
-  public void setMaximumFractionDigits(int newValue)
+  public void setGroupingUsed(boolean newValue)
   {
     CompactNumberFormat testee = $$$();
 
-    testee.setMaximumFractionDigits(newValue);
+    testee.setGroupingUsed(newValue);
   }
 
   /**
@@ -256,15 +231,40 @@ public final class WhatIsNewInCompactNumberFormat
   }
 
   /**
-   * Example call to new method {@link CompactNumberFormat#setRoundingMode(RoundingMode)}.
+   * Example call to new method {@link CompactNumberFormat#setParseIntegerOnly(boolean)}.
    * @since 12
-   * @see CompactNumberFormat#setRoundingMode(RoundingMode)
+   * @see CompactNumberFormat#setParseIntegerOnly(boolean)
    */
-  public void setRoundingMode(RoundingMode roundingMode)
+  public void setParseIntegerOnly(boolean value)
   {
     CompactNumberFormat testee = $$$();
 
-    testee.setRoundingMode(roundingMode);
+    testee.setParseIntegerOnly(value);
+  }
+
+  /**
+   * Example call to new method {@link CompactNumberFormat#isParseBigDecimal()}.
+   * @since 12
+   * @see CompactNumberFormat#isParseBigDecimal()
+   */
+  public boolean isParseBigDecimal()
+  {
+    CompactNumberFormat testee = $$$();
+
+    boolean result = testee.isParseBigDecimal();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link CompactNumberFormat#setParseBigDecimal(boolean)}.
+   * @since 12
+   * @see CompactNumberFormat#setParseBigDecimal(boolean)
+   */
+  public void setParseBigDecimal(boolean newValue)
+  {
+    CompactNumberFormat testee = $$$();
+
+    testee.setParseBigDecimal(newValue);
   }
 
   private CompactNumberFormat $$$()

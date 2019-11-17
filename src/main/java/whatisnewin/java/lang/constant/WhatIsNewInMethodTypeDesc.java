@@ -17,11 +17,137 @@ import java.util.List;
 public final class WhatIsNewInMethodTypeDesc
 {
   /**
-   * Example call to new method {@link MethodTypeDesc#insertParameterTypes(int, java.lang.constant.ClassDesc[])}.
+   * Example call to new method {@link MethodTypeDesc#ofDescriptor(String)}.
    * @since 12
-   * @see MethodTypeDesc#insertParameterTypes(int, java.lang.constant.ClassDesc[])
+   * @see MethodTypeDesc#ofDescriptor(String)
    */
-  public MethodTypeDesc insertParameterTypes(int pos, ClassDesc[] paramTypes)
+  public static MethodTypeDesc ofDescriptor(String descriptor)
+  {
+    MethodTypeDesc result = MethodTypeDesc.ofDescriptor(descriptor);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodTypeDesc#of(ClassDesc, ClassDesc...)}.
+   * @since 12
+   * @see MethodTypeDesc#of(ClassDesc, ClassDesc...)
+   */
+  public static MethodTypeDesc of(ClassDesc returnDesc, ClassDesc... paramDescs)
+  {
+    MethodTypeDesc result = MethodTypeDesc.of(returnDesc, paramDescs);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodTypeDesc#returnType()}.
+   * @since 12
+   * @see MethodTypeDesc#returnType()
+   */
+  public ClassDesc returnType()
+  {
+    MethodTypeDesc testee = $$$();
+
+    ClassDesc result = testee.returnType();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodTypeDesc#parameterCount()}.
+   * @since 12
+   * @see MethodTypeDesc#parameterCount()
+   */
+  public int parameterCount()
+  {
+    MethodTypeDesc testee = $$$();
+
+    int result = testee.parameterCount();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodTypeDesc#parameterType(int)}.
+   * @since 12
+   * @see MethodTypeDesc#parameterType(int)
+   */
+  public ClassDesc parameterType(int index)
+  {
+    MethodTypeDesc testee = $$$();
+
+    ClassDesc result = testee.parameterType(index);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodTypeDesc#parameterList()}.
+   * @since 12
+   * @see MethodTypeDesc#parameterList()
+   */
+  public List<ClassDesc> parameterList()
+  {
+    MethodTypeDesc testee = $$$();
+
+    List<ClassDesc> result = testee.parameterList();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodTypeDesc#parameterArray()}.
+   * @since 12
+   * @see MethodTypeDesc#parameterArray()
+   */
+  public ClassDesc[] parameterArray()
+  {
+    MethodTypeDesc testee = $$$();
+
+    ClassDesc[] result = testee.parameterArray();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodTypeDesc#changeReturnType(ClassDesc)}.
+   * @since 12
+   * @see MethodTypeDesc#changeReturnType(ClassDesc)
+   */
+  public MethodTypeDesc changeReturnType(ClassDesc returnType)
+  {
+    MethodTypeDesc testee = $$$();
+
+    MethodTypeDesc result = testee.changeReturnType(returnType);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodTypeDesc#changeParameterType(int, ClassDesc)}.
+   * @since 12
+   * @see MethodTypeDesc#changeParameterType(int, ClassDesc)
+   */
+  public MethodTypeDesc changeParameterType(int index, ClassDesc paramType)
+  {
+    MethodTypeDesc testee = $$$();
+
+    MethodTypeDesc result = testee.changeParameterType(index, paramType);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodTypeDesc#dropParameterTypes(int, int)}.
+   * @since 12
+   * @see MethodTypeDesc#dropParameterTypes(int, int)
+   */
+  public MethodTypeDesc dropParameterTypes(int start, int end)
+  {
+    MethodTypeDesc testee = $$$();
+
+    MethodTypeDesc result = testee.dropParameterTypes(start, end);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodTypeDesc#insertParameterTypes(int, ClassDesc...)}.
+   * @since 12
+   * @see MethodTypeDesc#insertParameterTypes(int, ClassDesc...)
+   */
+  public MethodTypeDesc insertParameterTypes(int pos, ClassDesc... paramTypes)
   {
     MethodTypeDesc testee = $$$();
 
@@ -43,108 +169,6 @@ public final class WhatIsNewInMethodTypeDesc
   }
 
   /**
-   * Example call to new method {@link MethodTypeDesc#changeParameterType(int, ClassDesc)}.
-   * @since 12
-   * @see MethodTypeDesc#changeParameterType(int, ClassDesc)
-   */
-  public MethodTypeDesc changeParameterType(int index, ClassDesc paramType)
-  {
-    MethodTypeDesc testee = $$$();
-
-    MethodTypeDesc result = testee.changeParameterType(index, paramType);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link MethodTypeDesc#parameterType(int)}.
-   * @since 12
-   * @see MethodTypeDesc#parameterType(int)
-   */
-  public ClassDesc parameterType(int index)
-  {
-    MethodTypeDesc testee = $$$();
-
-    ClassDesc result = testee.parameterType(index);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link MethodTypeDesc#parameterCount()}.
-   * @since 12
-   * @see MethodTypeDesc#parameterCount()
-   */
-  public int parameterCount()
-  {
-    MethodTypeDesc testee = $$$();
-
-    int result = testee.parameterCount();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link MethodTypeDesc#changeReturnType(ClassDesc)}.
-   * @since 12
-   * @see MethodTypeDesc#changeReturnType(ClassDesc)
-   */
-  public MethodTypeDesc changeReturnType(ClassDesc returnType)
-  {
-    MethodTypeDesc testee = $$$();
-
-    MethodTypeDesc result = testee.changeReturnType(returnType);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link MethodTypeDesc#dropParameterTypes(int, int)}.
-   * @since 12
-   * @see MethodTypeDesc#dropParameterTypes(int, int)
-   */
-  public MethodTypeDesc dropParameterTypes(int start, int end)
-  {
-    MethodTypeDesc testee = $$$();
-
-    MethodTypeDesc result = testee.dropParameterTypes(start, end);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link MethodTypeDesc#ofDescriptor(String)}.
-   * @since 12
-   * @see MethodTypeDesc#ofDescriptor(String)
-   */
-  public static MethodTypeDesc ofDescriptor(String descriptor)
-  {
-    MethodTypeDesc result = MethodTypeDesc.ofDescriptor(descriptor);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link MethodTypeDesc#parameterList()}.
-   * @since 12
-   * @see MethodTypeDesc#parameterList()
-   */
-  public List<ClassDesc> parameterList()
-  {
-    MethodTypeDesc testee = $$$();
-
-    List<ClassDesc> result = testee.parameterList();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link MethodTypeDesc#returnType()}.
-   * @since 12
-   * @see MethodTypeDesc#returnType()
-   */
-  public ClassDesc returnType()
-  {
-    MethodTypeDesc testee = $$$();
-
-    ClassDesc result = testee.returnType();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link MethodTypeDesc#displayDescriptor()}.
    * @since 12
    * @see MethodTypeDesc#displayDescriptor()
@@ -154,30 +178,6 @@ public final class WhatIsNewInMethodTypeDesc
     MethodTypeDesc testee = $$$();
 
     String result = testee.displayDescriptor();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link MethodTypeDesc#of(ClassDesc, java.lang.constant.ClassDesc[])}.
-   * @since 12
-   * @see MethodTypeDesc#of(ClassDesc, java.lang.constant.ClassDesc[])
-   */
-  public static MethodTypeDesc of(ClassDesc returnDesc, ClassDesc[] paramDescs)
-  {
-    MethodTypeDesc result = MethodTypeDesc.of(returnDesc, paramDescs);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link MethodTypeDesc#parameterArray()}.
-   * @since 12
-   * @see MethodTypeDesc#parameterArray()
-   */
-  public ClassDesc[] parameterArray()
-  {
-    MethodTypeDesc testee = $$$();
-
-    ClassDesc[] result = testee.parameterArray();
     return result;
   }
 

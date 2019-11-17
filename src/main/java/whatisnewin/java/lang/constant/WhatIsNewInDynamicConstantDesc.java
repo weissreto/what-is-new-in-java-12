@@ -30,6 +30,52 @@ public final class WhatIsNewInDynamicConstantDesc<T>
   }
 
   /**
+   * Example call to new method {@link DynamicConstantDesc#ofNamed(DirectMethodHandleDesc, String, ClassDesc, ConstantDesc...)}.
+   * @since 12
+   * @see DynamicConstantDesc#ofNamed(DirectMethodHandleDesc, String, ClassDesc, ConstantDesc...)
+   */
+  public static <T> DynamicConstantDesc<T> ofNamed(DirectMethodHandleDesc bootstrapMethod, String constantName, ClassDesc constantType, ConstantDesc... bootstrapArgs)
+  {
+    DynamicConstantDesc<T> result = DynamicConstantDesc.ofNamed(bootstrapMethod, constantName, constantType, bootstrapArgs);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link DynamicConstantDesc#of(DirectMethodHandleDesc, ConstantDesc...)}.
+   * @since 12
+   * @see DynamicConstantDesc#of(DirectMethodHandleDesc, ConstantDesc...)
+   */
+  public static <T> DynamicConstantDesc<T> of(DirectMethodHandleDesc bootstrapMethod, ConstantDesc... bootstrapArgs)
+  {
+    DynamicConstantDesc<T> result = DynamicConstantDesc.of(bootstrapMethod, bootstrapArgs);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link DynamicConstantDesc#of(DirectMethodHandleDesc)}.
+   * @since 12
+   * @see DynamicConstantDesc#of(DirectMethodHandleDesc)
+   */
+  public static <T> DynamicConstantDesc<T> of(DirectMethodHandleDesc bootstrapMethod)
+  {
+    DynamicConstantDesc<T> result = DynamicConstantDesc.of(bootstrapMethod);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link DynamicConstantDesc#constantName()}.
+   * @since 12
+   * @see DynamicConstantDesc#constantName()
+   */
+  public String constantName()
+  {
+    DynamicConstantDesc<T> testee = $$$();
+
+    String result = testee.constantName();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link DynamicConstantDesc#constantType()}.
    * @since 12
    * @see DynamicConstantDesc#constantType()
@@ -56,41 +102,6 @@ public final class WhatIsNewInDynamicConstantDesc<T>
   }
 
   /**
-   * Example call to new method {@link DynamicConstantDesc#constantName()}.
-   * @since 12
-   * @see DynamicConstantDesc#constantName()
-   */
-  public String constantName()
-  {
-    DynamicConstantDesc<T> testee = $$$();
-
-    String result = testee.constantName();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link DynamicConstantDesc#of(DirectMethodHandleDesc, java.lang.constant.ConstantDesc[])}.
-   * @since 12
-   * @see DynamicConstantDesc#of(DirectMethodHandleDesc, java.lang.constant.ConstantDesc[])
-   */
-  public static <T> DynamicConstantDesc<T> of(DirectMethodHandleDesc bootstrapMethod, ConstantDesc[] bootstrapArgs)
-  {
-    DynamicConstantDesc<T> result = DynamicConstantDesc.of(bootstrapMethod, bootstrapArgs);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link DynamicConstantDesc#of(DirectMethodHandleDesc)}.
-   * @since 12
-   * @see DynamicConstantDesc#of(DirectMethodHandleDesc)
-   */
-  public static <T> DynamicConstantDesc<T> of(DirectMethodHandleDesc bootstrapMethod)
-  {
-    DynamicConstantDesc<T> result = DynamicConstantDesc.of(bootstrapMethod);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link DynamicConstantDesc#bootstrapArgs()}.
    * @since 12
    * @see DynamicConstantDesc#bootstrapArgs()
@@ -113,17 +124,6 @@ public final class WhatIsNewInDynamicConstantDesc<T>
     DynamicConstantDesc<T> testee = $$$();
 
     List<ConstantDesc> result = testee.bootstrapArgsList();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link DynamicConstantDesc#ofNamed(DirectMethodHandleDesc, String, ClassDesc, java.lang.constant.ConstantDesc[])}.
-   * @since 12
-   * @see DynamicConstantDesc#ofNamed(DirectMethodHandleDesc, String, ClassDesc, java.lang.constant.ConstantDesc[])
-   */
-  public static <T> DynamicConstantDesc<T> ofNamed(DirectMethodHandleDesc bootstrapMethod, String constantName, ClassDesc constantType, ConstantDesc[] bootstrapArgs)
-  {
-    DynamicConstantDesc<T> result = DynamicConstantDesc.ofNamed(bootstrapMethod, constantName, constantType, bootstrapArgs);
     return result;
   }
 

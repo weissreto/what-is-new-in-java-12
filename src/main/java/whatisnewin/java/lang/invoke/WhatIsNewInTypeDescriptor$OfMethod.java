@@ -17,58 +17,6 @@ import java.util.List;
 public final class WhatIsNewInTypeDescriptor$OfMethod<F extends OfField<F>, M extends OfMethod<F, M>>
 {
   /**
-   * Example call to new method {@link OfMethod#returnType()}.
-   * @since 12
-   * @see OfMethod#returnType()
-   */
-  public F returnType()
-  {
-    OfMethod<F, M> testee = $$$();
-
-    F result = testee.returnType();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link OfMethod#changeParameterType(int, OfField)}.
-   * @since 12
-   * @see OfMethod#changeParameterType(int, OfField)
-   */
-  public M changeParameterType(int index, F paramType)
-  {
-    OfMethod<F, M> testee = $$$();
-
-    M result = testee.changeParameterType(index, paramType);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link OfMethod#parameterList()}.
-   * @since 12
-   * @see OfMethod#parameterList()
-   */
-  public List<F> parameterList()
-  {
-    OfMethod<F, M> testee = $$$();
-
-    List<F> result = testee.parameterList();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link OfMethod#insertParameterTypes(int, java.lang.invoke.TypeDescriptor.OfField[])}.
-   * @since 12
-   * @see OfMethod#insertParameterTypes(int, java.lang.invoke.TypeDescriptor.OfField[])
-   */
-  public M insertParameterTypes(int pos, F[] paramTypes)
-  {
-    OfMethod<F, M> testee = $$$();
-
-    M result = testee.insertParameterTypes(pos, paramTypes);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link OfMethod#parameterCount()}.
    * @since 12
    * @see OfMethod#parameterCount()
@@ -82,15 +30,28 @@ public final class WhatIsNewInTypeDescriptor$OfMethod<F extends OfField<F>, M ex
   }
 
   /**
-   * Example call to new method {@link OfMethod#changeReturnType(OfField)}.
+   * Example call to new method {@link OfMethod#parameterType(int)}.
    * @since 12
-   * @see OfMethod#changeReturnType(OfField)
+   * @see OfMethod#parameterType(int)
    */
-  public M changeReturnType(F newReturn)
+  public F parameterType(int i)
   {
     OfMethod<F, M> testee = $$$();
 
-    M result = testee.changeReturnType(newReturn);
+    F result = testee.parameterType(i);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link OfMethod#returnType()}.
+   * @since 12
+   * @see OfMethod#returnType()
+   */
+  public F returnType()
+  {
+    OfMethod<F, M> testee = $$$();
+
+    F result = testee.returnType();
     return result;
   }
 
@@ -108,6 +69,45 @@ public final class WhatIsNewInTypeDescriptor$OfMethod<F extends OfField<F>, M ex
   }
 
   /**
+   * Example call to new method {@link OfMethod#parameterList()}.
+   * @since 12
+   * @see OfMethod#parameterList()
+   */
+  public List<F> parameterList()
+  {
+    OfMethod<F, M> testee = $$$();
+
+    List<F> result = testee.parameterList();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link OfMethod#changeReturnType(OfField)}.
+   * @since 12
+   * @see OfMethod#changeReturnType(OfField)
+   */
+  public M changeReturnType(F newReturn)
+  {
+    OfMethod<F, M> testee = $$$();
+
+    M result = testee.changeReturnType(newReturn);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link OfMethod#changeParameterType(int, OfField)}.
+   * @since 12
+   * @see OfMethod#changeParameterType(int, OfField)
+   */
+  public M changeParameterType(int index, F paramType)
+  {
+    OfMethod<F, M> testee = $$$();
+
+    M result = testee.changeParameterType(index, paramType);
+    return result;
+  }
+
+  /**
    * Example call to new method {@link OfMethod#dropParameterTypes(int, int)}.
    * @since 12
    * @see OfMethod#dropParameterTypes(int, int)
@@ -121,15 +121,15 @@ public final class WhatIsNewInTypeDescriptor$OfMethod<F extends OfField<F>, M ex
   }
 
   /**
-   * Example call to new method {@link OfMethod#parameterType(int)}.
+   * Example call to new method {@link OfMethod#insertParameterTypes(int, OfField...)}.
    * @since 12
-   * @see OfMethod#parameterType(int)
+   * @see OfMethod#insertParameterTypes(int, OfField...)
    */
-  public F parameterType(int i)
+  public M insertParameterTypes(int pos, F... paramTypes)
   {
     OfMethod<F, M> testee = $$$();
 
-    F result = testee.parameterType(i);
+    M result = testee.insertParameterTypes(pos, paramTypes);
     return result;
   }
 

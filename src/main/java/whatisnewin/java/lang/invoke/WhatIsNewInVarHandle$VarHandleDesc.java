@@ -29,6 +29,28 @@ public final class WhatIsNewInVarHandle$VarHandleDesc
   }
 
   /**
+   * Example call to new method {@link VarHandleDesc#ofStaticField(ClassDesc, String, ClassDesc)}.
+   * @since 12
+   * @see VarHandleDesc#ofStaticField(ClassDesc, String, ClassDesc)
+   */
+  public static VarHandleDesc ofStaticField(ClassDesc declaringClass, String name, ClassDesc fieldType)
+  {
+    VarHandleDesc result = VarHandleDesc.ofStaticField(declaringClass, name, fieldType);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link VarHandleDesc#ofArray(ClassDesc)}.
+   * @since 12
+   * @see VarHandleDesc#ofArray(ClassDesc)
+   */
+  public static VarHandleDesc ofArray(ClassDesc arrayClass)
+  {
+    VarHandleDesc result = VarHandleDesc.ofArray(arrayClass);
+    return result;
+  }
+
+  /**
    * Example call to new method {@link VarHandleDesc#varType()}.
    * @since 12
    * @see VarHandleDesc#varType()
@@ -51,28 +73,6 @@ public final class WhatIsNewInVarHandle$VarHandleDesc
     VarHandleDesc testee = $$$();
 
     VarHandle result = testee.resolveConstantDesc(lookup);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link VarHandleDesc#ofStaticField(ClassDesc, String, ClassDesc)}.
-   * @since 12
-   * @see VarHandleDesc#ofStaticField(ClassDesc, String, ClassDesc)
-   */
-  public static VarHandleDesc ofStaticField(ClassDesc declaringClass, String name, ClassDesc fieldType)
-  {
-    VarHandleDesc result = VarHandleDesc.ofStaticField(declaringClass, name, fieldType);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link VarHandleDesc#ofArray(ClassDesc)}.
-   * @since 12
-   * @see VarHandleDesc#ofArray(ClassDesc)
-   */
-  public static VarHandleDesc ofArray(ClassDesc arrayClass)
-  {
-    VarHandleDesc result = VarHandleDesc.ofArray(arrayClass);
     return result;
   }
 

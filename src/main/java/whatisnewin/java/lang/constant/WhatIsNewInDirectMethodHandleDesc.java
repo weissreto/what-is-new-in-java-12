@@ -43,19 +43,6 @@ public final class WhatIsNewInDirectMethodHandleDesc
   }
 
   /**
-   * Example call to new method {@link DirectMethodHandleDesc#owner()}.
-   * @since 12
-   * @see DirectMethodHandleDesc#owner()
-   */
-  public ClassDesc owner()
-  {
-    DirectMethodHandleDesc testee = $$$();
-
-    ClassDesc result = testee.owner();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link DirectMethodHandleDesc#isOwnerInterface()}.
    * @since 12
    * @see DirectMethodHandleDesc#isOwnerInterface()
@@ -65,6 +52,19 @@ public final class WhatIsNewInDirectMethodHandleDesc
     DirectMethodHandleDesc testee = $$$();
 
     boolean result = testee.isOwnerInterface();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link DirectMethodHandleDesc#owner()}.
+   * @since 12
+   * @see DirectMethodHandleDesc#owner()
+   */
+  public ClassDesc owner()
+  {
+    DirectMethodHandleDesc testee = $$$();
+
+    ClassDesc result = testee.owner();
     return result;
   }
 

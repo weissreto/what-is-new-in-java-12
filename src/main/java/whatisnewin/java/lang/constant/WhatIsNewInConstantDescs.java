@@ -402,24 +402,24 @@ public final class WhatIsNewInConstantDescs
   public static final java.lang.constant.ConstantDesc NULL = ConstantDescs.NULL;
 
   /**
-   * Example call to new method {@link ConstantDescs#ofConstantBootstrap(ClassDesc, String, ClassDesc, java.lang.constant.ClassDesc[])}.
+   * Example call to new method {@link ConstantDescs#ofCallsiteBootstrap(ClassDesc, String, ClassDesc, ClassDesc...)}.
    * @since 12
-   * @see ConstantDescs#ofConstantBootstrap(ClassDesc, String, ClassDesc, java.lang.constant.ClassDesc[])
+   * @see ConstantDescs#ofCallsiteBootstrap(ClassDesc, String, ClassDesc, ClassDesc...)
    */
-  public static DirectMethodHandleDesc ofConstantBootstrap(ClassDesc owner, String name, ClassDesc returnType, ClassDesc[] paramTypes)
+  public static DirectMethodHandleDesc ofCallsiteBootstrap(ClassDesc owner, String name, ClassDesc returnType, ClassDesc... paramTypes)
   {
-    DirectMethodHandleDesc result = ConstantDescs.ofConstantBootstrap(owner, name, returnType, paramTypes);
+    DirectMethodHandleDesc result = ConstantDescs.ofCallsiteBootstrap(owner, name, returnType, paramTypes);
     return result;
   }
 
   /**
-   * Example call to new method {@link ConstantDescs#ofCallsiteBootstrap(ClassDesc, String, ClassDesc, java.lang.constant.ClassDesc[])}.
+   * Example call to new method {@link ConstantDescs#ofConstantBootstrap(ClassDesc, String, ClassDesc, ClassDesc...)}.
    * @since 12
-   * @see ConstantDescs#ofCallsiteBootstrap(ClassDesc, String, ClassDesc, java.lang.constant.ClassDesc[])
+   * @see ConstantDescs#ofConstantBootstrap(ClassDesc, String, ClassDesc, ClassDesc...)
    */
-  public static DirectMethodHandleDesc ofCallsiteBootstrap(ClassDesc owner, String name, ClassDesc returnType, ClassDesc[] paramTypes)
+  public static DirectMethodHandleDesc ofConstantBootstrap(ClassDesc owner, String name, ClassDesc returnType, ClassDesc... paramTypes)
   {
-    DirectMethodHandleDesc result = ConstantDescs.ofCallsiteBootstrap(owner, name, returnType, paramTypes);
+    DirectMethodHandleDesc result = ConstantDescs.ofConstantBootstrap(owner, name, returnType, paramTypes);
     return result;
   }
 

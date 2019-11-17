@@ -28,15 +28,15 @@ public final class WhatIsNewInTypeDescriptor$OfField<F extends OfField<F>>
   }
 
   /**
-   * Example call to new method {@link OfField#arrayType()}.
+   * Example call to new method {@link OfField#isPrimitive()}.
    * @since 12
-   * @see OfField#arrayType()
+   * @see OfField#isPrimitive()
    */
-  public F arrayType()
+  public boolean isPrimitive()
   {
     OfField<F> testee = $$$();
 
-    F result = testee.arrayType();
+    boolean result = testee.isPrimitive();
     return result;
   }
 
@@ -54,15 +54,15 @@ public final class WhatIsNewInTypeDescriptor$OfField<F extends OfField<F>>
   }
 
   /**
-   * Example call to new method {@link OfField#isPrimitive()}.
+   * Example call to new method {@link OfField#arrayType()}.
    * @since 12
-   * @see OfField#isPrimitive()
+   * @see OfField#arrayType()
    */
-  public boolean isPrimitive()
+  public F arrayType()
   {
     OfField<F> testee = $$$();
 
-    boolean result = testee.isPrimitive();
+    F result = testee.arrayType();
     return result;
   }
 

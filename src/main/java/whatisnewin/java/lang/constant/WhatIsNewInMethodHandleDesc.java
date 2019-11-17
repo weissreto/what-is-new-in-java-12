@@ -30,13 +30,13 @@ public final class WhatIsNewInMethodHandleDesc
   }
 
   /**
-   * Example call to new method {@link MethodHandleDesc#ofConstructor(ClassDesc, java.lang.constant.ClassDesc[])}.
+   * Example call to new method {@link MethodHandleDesc#ofMethod(Kind, ClassDesc, String, MethodTypeDesc)}.
    * @since 12
-   * @see MethodHandleDesc#ofConstructor(ClassDesc, java.lang.constant.ClassDesc[])
+   * @see MethodHandleDesc#ofMethod(Kind, ClassDesc, String, MethodTypeDesc)
    */
-  public static DirectMethodHandleDesc ofConstructor(ClassDesc owner, ClassDesc[] paramTypes)
+  public static DirectMethodHandleDesc ofMethod(Kind kind, ClassDesc owner, String name, MethodTypeDesc lookupMethodType)
   {
-    DirectMethodHandleDesc result = MethodHandleDesc.ofConstructor(owner, paramTypes);
+    DirectMethodHandleDesc result = MethodHandleDesc.ofMethod(kind, owner, name, lookupMethodType);
     return result;
   }
 
@@ -48,6 +48,17 @@ public final class WhatIsNewInMethodHandleDesc
   public static DirectMethodHandleDesc ofField(Kind kind, ClassDesc owner, String fieldName, ClassDesc fieldType)
   {
     DirectMethodHandleDesc result = MethodHandleDesc.ofField(kind, owner, fieldName, fieldType);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodHandleDesc#ofConstructor(ClassDesc, ClassDesc...)}.
+   * @since 12
+   * @see MethodHandleDesc#ofConstructor(ClassDesc, ClassDesc...)
+   */
+  public static DirectMethodHandleDesc ofConstructor(ClassDesc owner, ClassDesc... paramTypes)
+  {
+    DirectMethodHandleDesc result = MethodHandleDesc.ofConstructor(owner, paramTypes);
     return result;
   }
 
@@ -74,17 +85,6 @@ public final class WhatIsNewInMethodHandleDesc
     MethodHandleDesc testee = $$$();
 
     MethodTypeDesc result = testee.invocationType();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link MethodHandleDesc#ofMethod(Kind, ClassDesc, String, MethodTypeDesc)}.
-   * @since 12
-   * @see MethodHandleDesc#ofMethod(Kind, ClassDesc, String, MethodTypeDesc)
-   */
-  public static DirectMethodHandleDesc ofMethod(Kind kind, ClassDesc owner, String name, MethodTypeDesc lookupMethodType)
-  {
-    DirectMethodHandleDesc result = MethodHandleDesc.ofMethod(kind, owner, name, lookupMethodType);
     return result;
   }
 

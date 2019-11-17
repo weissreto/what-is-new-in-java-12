@@ -16,19 +16,6 @@ import java.util.Optional;
 public final class WhatIsNewInString
 {
   /**
-   * Example call to new method {@link String#transform(Function)}.
-   * @since 12
-   * @see String#transform(Function)
-   */
-  public <R> R transform(Function<? super String, ? extends R> f)
-  {
-    String testee = $$$();
-
-    R result = testee.transform(f);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link String#indent(int)}.
    * @since 12
    * @see String#indent(int)
@@ -38,6 +25,19 @@ public final class WhatIsNewInString
     String testee = $$$();
 
     String result = testee.indent(n);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link String#transform(Function)}.
+   * @since 12
+   * @see String#transform(Function)
+   */
+  public <R> R transform(Function<? super String, ? extends R> f)
+  {
+    String testee = $$$();
+
+    R result = testee.transform(f);
     return result;
   }
 

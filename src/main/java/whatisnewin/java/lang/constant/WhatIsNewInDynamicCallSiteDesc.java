@@ -1,10 +1,10 @@
 package whatisnewin.java.lang.constant;
 
 import java.lang.constant.DynamicCallSiteDesc;
-import java.lang.constant.MethodTypeDesc;
-import java.lang.constant.MethodHandleDesc;
-import java.lang.constant.ConstantDesc;
 import java.lang.constant.DirectMethodHandleDesc;
+import java.lang.constant.MethodTypeDesc;
+import java.lang.constant.ConstantDesc;
+import java.lang.constant.MethodHandleDesc;
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandles.Lookup;
 
@@ -21,63 +21,11 @@ import java.lang.invoke.MethodHandles.Lookup;
 public final class WhatIsNewInDynamicCallSiteDesc
 {
   /**
-   * Example call to new method {@link DynamicCallSiteDesc#invocationType()}.
+   * Example call to new method {@link DynamicCallSiteDesc#of(DirectMethodHandleDesc, String, MethodTypeDesc, ConstantDesc...)}.
    * @since 12
-   * @see DynamicCallSiteDesc#invocationType()
+   * @see DynamicCallSiteDesc#of(DirectMethodHandleDesc, String, MethodTypeDesc, ConstantDesc...)
    */
-  public MethodTypeDesc invocationType()
-  {
-    DynamicCallSiteDesc testee = $$$();
-
-    MethodTypeDesc result = testee.invocationType();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link DynamicCallSiteDesc#invocationName()}.
-   * @since 12
-   * @see DynamicCallSiteDesc#invocationName()
-   */
-  public String invocationName()
-  {
-    DynamicCallSiteDesc testee = $$$();
-
-    String result = testee.invocationName();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link DynamicCallSiteDesc#bootstrapMethod()}.
-   * @since 12
-   * @see DynamicCallSiteDesc#bootstrapMethod()
-   */
-  public MethodHandleDesc bootstrapMethod()
-  {
-    DynamicCallSiteDesc testee = $$$();
-
-    MethodHandleDesc result = testee.bootstrapMethod();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link DynamicCallSiteDesc#withArgs(java.lang.constant.ConstantDesc[])}.
-   * @since 12
-   * @see DynamicCallSiteDesc#withArgs(java.lang.constant.ConstantDesc[])
-   */
-  public DynamicCallSiteDesc withArgs(ConstantDesc[] bootstrapArgs)
-  {
-    DynamicCallSiteDesc testee = $$$();
-
-    DynamicCallSiteDesc result = testee.withArgs(bootstrapArgs);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link DynamicCallSiteDesc#of(DirectMethodHandleDesc, String, MethodTypeDesc, java.lang.constant.ConstantDesc[])}.
-   * @since 12
-   * @see DynamicCallSiteDesc#of(DirectMethodHandleDesc, String, MethodTypeDesc, java.lang.constant.ConstantDesc[])
-   */
-  public static DynamicCallSiteDesc of(DirectMethodHandleDesc bootstrapMethod, String invocationName, MethodTypeDesc invocationType, ConstantDesc[] bootstrapArgs)
+  public static DynamicCallSiteDesc of(DirectMethodHandleDesc bootstrapMethod, String invocationName, MethodTypeDesc invocationType, ConstantDesc... bootstrapArgs)
   {
     DynamicCallSiteDesc result = DynamicCallSiteDesc.of(bootstrapMethod, invocationName, invocationType, bootstrapArgs);
     return result;
@@ -106,6 +54,71 @@ public final class WhatIsNewInDynamicCallSiteDesc
   }
 
   /**
+   * Example call to new method {@link DynamicCallSiteDesc#withArgs(ConstantDesc...)}.
+   * @since 12
+   * @see DynamicCallSiteDesc#withArgs(ConstantDesc...)
+   */
+  public DynamicCallSiteDesc withArgs(ConstantDesc... bootstrapArgs)
+  {
+    DynamicCallSiteDesc testee = $$$();
+
+    DynamicCallSiteDesc result = testee.withArgs(bootstrapArgs);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link DynamicCallSiteDesc#withNameAndType(String, MethodTypeDesc)}.
+   * @since 12
+   * @see DynamicCallSiteDesc#withNameAndType(String, MethodTypeDesc)
+   */
+  public DynamicCallSiteDesc withNameAndType(String invocationName, MethodTypeDesc invocationType)
+  {
+    DynamicCallSiteDesc testee = $$$();
+
+    DynamicCallSiteDesc result = testee.withNameAndType(invocationName, invocationType);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link DynamicCallSiteDesc#invocationName()}.
+   * @since 12
+   * @see DynamicCallSiteDesc#invocationName()
+   */
+  public String invocationName()
+  {
+    DynamicCallSiteDesc testee = $$$();
+
+    String result = testee.invocationName();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link DynamicCallSiteDesc#invocationType()}.
+   * @since 12
+   * @see DynamicCallSiteDesc#invocationType()
+   */
+  public MethodTypeDesc invocationType()
+  {
+    DynamicCallSiteDesc testee = $$$();
+
+    MethodTypeDesc result = testee.invocationType();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link DynamicCallSiteDesc#bootstrapMethod()}.
+   * @since 12
+   * @see DynamicCallSiteDesc#bootstrapMethod()
+   */
+  public MethodHandleDesc bootstrapMethod()
+  {
+    DynamicCallSiteDesc testee = $$$();
+
+    MethodHandleDesc result = testee.bootstrapMethod();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link DynamicCallSiteDesc#bootstrapArgs()}.
    * @since 12
    * @see DynamicCallSiteDesc#bootstrapArgs()
@@ -128,19 +141,6 @@ public final class WhatIsNewInDynamicCallSiteDesc
     DynamicCallSiteDesc testee = $$$();
 
     CallSite result = testee.resolveCallSiteDesc(lookup);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link DynamicCallSiteDesc#withNameAndType(String, MethodTypeDesc)}.
-   * @since 12
-   * @see DynamicCallSiteDesc#withNameAndType(String, MethodTypeDesc)
-   */
-  public DynamicCallSiteDesc withNameAndType(String invocationName, MethodTypeDesc invocationType)
-  {
-    DynamicCallSiteDesc testee = $$$();
-
-    DynamicCallSiteDesc result = testee.withNameAndType(invocationName, invocationType);
     return result;
   }
 

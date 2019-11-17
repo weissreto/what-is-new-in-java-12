@@ -29,17 +29,6 @@ public final class WhatIsNewInNumberFormat$Style
   public static final Style LONG = Style.LONG;
 
   /**
-   * Example call to new method {@link Style#valueOf(String)}.
-   * @since 12
-   * @see Style#valueOf(String)
-   */
-  public static Style valueOf(String name)
-  {
-    Style result = Style.valueOf(name);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Style#values()}.
    * @since 12
    * @see Style#values()
@@ -47,6 +36,17 @@ public final class WhatIsNewInNumberFormat$Style
   public static Style[] values()
   {
     Style[] result = Style.values();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Style#valueOf(String)}.
+   * @since 12
+   * @see Style#valueOf(String)
+   */
+  public static Style valueOf(String name)
+  {
+    Style result = Style.valueOf(name);
     return result;
   }
 

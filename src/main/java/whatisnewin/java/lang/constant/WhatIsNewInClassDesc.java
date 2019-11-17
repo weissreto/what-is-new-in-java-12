@@ -37,19 +37,6 @@ public final class WhatIsNewInClassDesc
   }
 
   /**
-   * Example call to new method {@link ClassDesc#isPrimitive()}.
-   * @since 12
-   * @see ClassDesc#isPrimitive()
-   */
-  public boolean isPrimitive()
-  {
-    ClassDesc testee = $$$();
-
-    boolean result = testee.isPrimitive();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link ClassDesc#ofDescriptor(String)}.
    * @since 12
    * @see ClassDesc#ofDescriptor(String)
@@ -57,45 +44,6 @@ public final class WhatIsNewInClassDesc
   public static ClassDesc ofDescriptor(String descriptor)
   {
     ClassDesc result = ClassDesc.ofDescriptor(descriptor);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ClassDesc#isArray()}.
-   * @since 12
-   * @see ClassDesc#isArray()
-   */
-  public boolean isArray()
-  {
-    ClassDesc testee = $$$();
-
-    boolean result = testee.isArray();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ClassDesc#packageName()}.
-   * @since 12
-   * @see ClassDesc#packageName()
-   */
-  public String packageName()
-  {
-    ClassDesc testee = $$$();
-
-    String result = testee.packageName();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ClassDesc#displayName()}.
-   * @since 12
-   * @see ClassDesc#displayName()
-   */
-  public String displayName()
-  {
-    ClassDesc testee = $$$();
-
-    String result = testee.displayName();
     return result;
   }
 
@@ -126,15 +74,54 @@ public final class WhatIsNewInClassDesc
   }
 
   /**
-   * Example call to new method {@link ClassDesc#componentType()}.
+   * Example call to new method {@link ClassDesc#nested(String)}.
    * @since 12
-   * @see ClassDesc#componentType()
+   * @see ClassDesc#nested(String)
    */
-  public ClassDesc componentType()
+  public ClassDesc nested(String nestedName)
   {
     ClassDesc testee = $$$();
 
-    ClassDesc result = testee.componentType();
+    ClassDesc result = testee.nested(nestedName);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ClassDesc#nested(String, String...)}.
+   * @since 12
+   * @see ClassDesc#nested(String, String...)
+   */
+  public ClassDesc nested(String firstNestedName, String... moreNestedNames)
+  {
+    ClassDesc testee = $$$();
+
+    ClassDesc result = testee.nested(firstNestedName, moreNestedNames);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ClassDesc#isArray()}.
+   * @since 12
+   * @see ClassDesc#isArray()
+   */
+  public boolean isArray()
+  {
+    ClassDesc testee = $$$();
+
+    boolean result = testee.isArray();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ClassDesc#isPrimitive()}.
+   * @since 12
+   * @see ClassDesc#isPrimitive()
+   */
+  public boolean isPrimitive()
+  {
+    ClassDesc testee = $$$();
+
+    boolean result = testee.isPrimitive();
     return result;
   }
 
@@ -152,28 +139,41 @@ public final class WhatIsNewInClassDesc
   }
 
   /**
-   * Example call to new method {@link ClassDesc#nested(String)}.
+   * Example call to new method {@link ClassDesc#componentType()}.
    * @since 12
-   * @see ClassDesc#nested(String)
+   * @see ClassDesc#componentType()
    */
-  public ClassDesc nested(String nestedName)
+  public ClassDesc componentType()
   {
     ClassDesc testee = $$$();
 
-    ClassDesc result = testee.nested(nestedName);
+    ClassDesc result = testee.componentType();
     return result;
   }
 
   /**
-   * Example call to new method {@link ClassDesc#nested(String, String[])}.
+   * Example call to new method {@link ClassDesc#packageName()}.
    * @since 12
-   * @see ClassDesc#nested(String, String[])
+   * @see ClassDesc#packageName()
    */
-  public ClassDesc nested(String firstNestedName, String[] moreNestedNames)
+  public String packageName()
   {
     ClassDesc testee = $$$();
 
-    ClassDesc result = testee.nested(firstNestedName, moreNestedNames);
+    String result = testee.packageName();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ClassDesc#displayName()}.
+   * @since 12
+   * @see ClassDesc#displayName()
+   */
+  public String displayName()
+  {
+    ClassDesc testee = $$$();
+
+    String result = testee.displayName();
     return result;
   }
 
