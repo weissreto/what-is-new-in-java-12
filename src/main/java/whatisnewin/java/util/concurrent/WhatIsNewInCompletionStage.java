@@ -81,7 +81,7 @@ public final class WhatIsNewInCompletionStage<T>
     return result;
   }
 
-  private CompletionStage $$$()
+  private CompletionStage<T> $$$()
   {
     return null;
   }

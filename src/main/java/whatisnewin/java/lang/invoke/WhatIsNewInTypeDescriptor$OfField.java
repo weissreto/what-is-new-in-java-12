@@ -66,7 +66,7 @@ public final class WhatIsNewInTypeDescriptor$OfField<F extends OfField<F>>
     return result;
   }
 
-  private OfField $$$()
+  private OfField<F> $$$()
   {
     return null;
   }

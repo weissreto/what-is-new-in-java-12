@@ -28,7 +28,7 @@ public final class WhatIsNewInEnum<E extends Enum<E>>
     return result;
   }
 
-  private Enum $$$()
+  private Enum<E> $$$()
   {
     return null;
   }

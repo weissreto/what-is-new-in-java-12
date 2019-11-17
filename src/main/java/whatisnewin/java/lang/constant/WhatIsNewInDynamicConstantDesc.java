@@ -127,7 +127,7 @@ public final class WhatIsNewInDynamicConstantDesc<T>
     return result;
   }
 
-  private DynamicConstantDesc $$$()
+  private DynamicConstantDesc<T> $$$()
   {
     return null;
   }

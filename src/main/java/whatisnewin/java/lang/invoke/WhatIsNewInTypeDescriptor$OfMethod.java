@@ -133,7 +133,7 @@ public final class WhatIsNewInTypeDescriptor$OfMethod<F extends OfField<F>, M ex
     return result;
   }
 
-  private OfMethod $$$()
+  private OfMethod<F, M> $$$()
   {
     return null;
   }
